@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DevOps Dashboard</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+        min-height: 100vh;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+    }
+
+    header h2 {
+        font-size: 27px;
+    }
+
+    .version {
+        background: #00c9a7;
+        padding: 10px 18px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    main {
+        text-align: center;
+        padding: 85px 20px;
+    }
+
+    main h1 {
+        font-size: clamp(32px, 5vw, 55px);
+        margin-bottom: 20px;
+    }
+
+    main p {
+        font-size: 19px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .status {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px 35px;
+        border-radius: 15px;
+        margin: 15px 0 25px;
+    }
+
+    .success {
+        color: #54ff9f;
+        font-weight: bold;
+    }
+
+    button {
+        display: block;
+        margin: 15px auto;
+        padding: 15px 28px;
+        border: none;
+        border-radius: 30px;
+        background: #ffb703;
+        color: #172554;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ffffff;
+    }
+
+    .technologies {
+        background: #ffffff;
+        color: #172554;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .technologies h2 {
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        background: #f1f5ff;
+        padding: 22px;
+        border-radius: 12px;
+        width: 145px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 22px;
+        background: #111827;
+        color: #dbeafe;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <h2>☁ DevOps App</h2>
+    <span class="version">Version 1.0</span>
+</header>
+
+<main>
+    <h1>Welcome to My DevOps Project!</h1>
+
+    <p>
+        Automated CI/CD Pipeline<br>
+        Built with Jenkins, Maven, Docker and AWS
+    </p>
+
+    <div class="status">
+        <p>Application Version: <strong>1.0</strong></p>
+        <p>Deployment Status: <span class="success">SUCCESS</span></p>
+    </div>
+
+    <button onclick="showMessage()">
+        View Deployment Details →
+    </button>
+
+    <p id="message"></p>
+</main>
+
+<section class="technologies">
+    <h2>Technologies Used</h2>
+
+    <div class="cards">
+        <div class="card">☕<br><br>Java</div>
+        <div class="card">🔨<br><br>Maven</div>
+        <div class="card">🐙<br><br>GitHub</div>
+        <div class="card">⚙️<br><br>Jenkins</div>
+        <div class="card">🐳<br><br>Docker</div>
+        <div class="card">☁️<br><br>AWS EC2</div>
+    </div>
+</section>
+
+<footer>
+    Simple • Automated • Reliable<br><br>
+    My First DevOps CI/CD Project
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").textContent =
+            "Welcome! This application will be deployed using a CI/CD pipeline.";
+    }
+</script>
+```
+
+</body>
+</html>
